@@ -5,13 +5,13 @@ phases:
          -echo "install executing phases"
       pre_build:
       commands:
-        -echo "Enterd the pre-build phases"        
+        -echo "Enterd the pre-build phases" 
+               
       build:
       commands:
         -echo "Enterd the  build phase"
-        -mvn clean prepare-package war:exploded
-              
-       post_build:
+        
+post_build:
          commands:
             -echo "Enterd the post-build phase"
         
