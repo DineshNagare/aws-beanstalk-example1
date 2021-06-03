@@ -1,8 +1,6 @@
 version: 0.2
 phases:
-      install:
-      commands:
-         -echo "install executing phases"
+
       pre_build:
       commands:
         -echo "Enterd the pre-build phases" 
