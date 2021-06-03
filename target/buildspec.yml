@@ -1,13 +1,18 @@
 version: 0.2
 phases:
-   pre_build:
+      install:
+      commands:
+         -echo "install executing phases"
+      pre_build:
       commands:
         -echo "Enterd the pre-build phases"        
       build:
       commands:
         -echo "Enterd the  build phase"
         -mvn clean prepare-package war:exploded
-        
-       post_build:commands:-echo "Enterd the post-build phase"
+              
+       post_build:
+         commands:
+            -echo "Enterd the post-build phase"
         
         
