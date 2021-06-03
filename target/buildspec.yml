@@ -1,15 +1,13 @@
 version: 0.2
 phases:
-      pre_build:
-      commands:
-               -echo "Enterd the pre-build phases" 
-               
+     pre_build:
+       commands:
+       -echo "Enterd the pre-build phases"        
       build:
-      commands:
-        -echo "Enterd the  build phase"
-        
-post_build:
-         commands:
+        commands:
+        -echo "Enterd the  build phase" 
+       post_build:
+           commands:
             -echo "Enterd the post-build phase"
         
         
