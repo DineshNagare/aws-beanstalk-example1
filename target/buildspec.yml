@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+   pre-build:
+      commands:
+        -echo "Enterd the pre-build phases"        
+      build:
+      commands:
+        -echo "Enterd the  build phase"
+        -mvn clean prepare-package war:explode
+        
+       post-build:commands:-echo "Enterd the post-build phase"
+        
+        
